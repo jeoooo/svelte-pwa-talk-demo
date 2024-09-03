@@ -3,6 +3,7 @@
 	import ButtonClickDemo from '$lib/ButtonClickDemo.svelte';
 	import ComponentWithProps from '$lib/ComponentWithProps.svelte';
 	import Logic from '$lib/Logic.svelte';
+	import Loops from '$lib/Loops.svelte';
 	import BasicComponent from './../lib/BasicComponent.svelte';
 </script>
 
@@ -31,6 +32,9 @@
 
 <h1>Logic</h1>
 <Logic x={5} />
+
+<h1>Loops</h1>
+<Loops />
 
 <h1>
 	for more on Svelte stuff <a href="https://svelte.dev/examples/hello-world">go here</a>

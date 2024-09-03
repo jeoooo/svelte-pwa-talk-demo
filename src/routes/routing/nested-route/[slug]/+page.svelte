@@ -1,5 +1,9 @@
 <script lang="ts">
-	// import type { PageData } from './$types';
+	import { page } from '$app/stores';
 
-	// export let data: PageData;
+	// Access the dynamic slug from the URL
+	const slug = $page.params.slug;
 </script>
+
+<h1>Nested Route with Slug</h1>
+<p>You are viewing the page for: <strong>{slug}</strong></p>

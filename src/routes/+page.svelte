@@ -8,35 +8,74 @@
 	import Reactivity from '$lib/Reactivity.svelte';
 </script>
 
-<!-- basic component -->
+<!-- Centered container for the title -->
+<div class="center-container">
+	<h1>Svelte Demo</h1>
+</div>
 
-<h1>Svelte Demo</h1>
+<!-- Grid container for other components -->
+<div class="grid-container">
+	<div class="grid-item">
+		<h1>Basic Routing</h1>
+		<BasicRoutingDemo />
+	</div>
 
-<h1>Basic Routing</h1>
-<BasicRoutingDemo />
+	<div class="grid-item">
+		<h1>Basic Component</h1>
+		<BasicComponent />
+	</div>
 
-<h1>Basic Component</h1>
-<BasicComponent />
+	<div class="grid-item">
+		<h1>Component with Props (Default)</h1>
+		<ComponentWithProps />
+	</div>
 
-<!-- component with props (default) -->
-<h1>component with props (default)</h1>
-<ComponentWithProps />
+	<div class="grid-item">
+		<h1>Component with Props</h1>
+		<ComponentWithProps text="hello" backgroundColor="#ba2a20" textColor="white" />
+	</div>
 
-<!-- component with props -->
+	<div class="grid-item">
+		<h1>Reactivity</h1>
+		<Reactivity />
+	</div>
 
-<h1>component with props</h1>
-<ComponentWithProps text="hello" backgroundColor="#ba2a20" textColor="white" />
+	<div class="grid-item">
+		<h1>Logic</h1>
+		<Logic x={5} />
+	</div>
 
-<!-- reactivity -->
-<h1>Reactivity</h1>
-<Reactivity />
+	<div class="grid-item">
+		<h1>Loops</h1>
+		<Loops />
+	</div>
 
-<h1>Logic</h1>
-<Logic x={5} />
+	<div class="grid-item">
+		<h1>For more on Svelte stuff <a href="https://svelte.dev/examples/hello-world">go here</a></h1>
+	</div>
+</div>
 
-<h1>Loops</h1>
-<Loops />
+<style>
+	/* Center container for the title */
+	.center-container {
+		text-align: center; /* Center the text horizontally */
+		margin: 20px; /* Add some margin for spacing */
+	}
 
-<h1>
-	for more on Svelte stuff <a href="https://svelte.dev/examples/hello-world">go here</a>
-</h1>
+	/* Grid container styling */
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr); /* 2 columns, each taking equal space */
+		gap: 16px; /* Adjust spacing between grid items */
+		padding: 16px;
+	}
+
+	/* Grid item styling */
+	.grid-item {
+		background-color: #f9f9f9; /* Background color for grid items */
+		border: 1px solid #ddd; /* Border for grid items */
+		border-radius: 8px; /* Rounded corners */
+		padding: 16px; /* Padding inside grid items */
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+	}
+</style>

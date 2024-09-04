@@ -6,4 +6,4 @@
 </script>
 
 <h1>Nested Route with Slug</h1>
-<p>You are viewing the page for: <strong>{slug}</strong></p>
+<p>You are viewing the page for: /routing/nested-route/<strong>{slug}</strong> route</p>

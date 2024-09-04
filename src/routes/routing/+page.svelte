@@ -3,3 +3,5 @@
 
 	// export let data: PageData;
 </script>
+
+<p>this is the /routing route</p>

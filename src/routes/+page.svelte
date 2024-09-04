@@ -1,10 +1,11 @@
 <script>
 	import BasicRoutingDemo from '$lib/BasicRoutingDemo.svelte';
-	import ButtonClickDemo from '$lib/ButtonClickDemo.svelte';
+	import ButtonClickDemo from '$lib/Reactivity.svelte';
 	import ComponentWithProps from '$lib/ComponentWithProps.svelte';
 	import Logic from '$lib/Logic.svelte';
 	import Loops from '$lib/Loops.svelte';
 	import BasicComponent from './../lib/BasicComponent.svelte';
+	import Reactivity from '$lib/Reactivity.svelte';
 </script>
 
 <!-- basic component -->
@@ -28,7 +29,7 @@
 
 <!-- reactivity -->
 <h1>Reactivity</h1>
-<ButtonClickDemo />
+<Reactivity />
 
 <h1>Logic</h1>
 <Logic x={5} />
